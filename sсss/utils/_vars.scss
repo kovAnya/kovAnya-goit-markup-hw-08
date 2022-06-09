@@ -1,0 +1,20 @@
+:root {
+  /* accent colors */
+  --accent-color: #2196f3;
+  --white-accent: #fff;
+  --black-accent: #000;
+  --transparent-white: rgba(255, 255, 255, 0.6);
+  --bottom-line: #ececec;
+  --icon-color: #afb1b8;
+  --icon-transparent-bg: rgba(255, 255, 255, 0.1);
+
+  --timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* font colors */
+  --main-color: #212121;
+  --secondary-color: #757575;
+  /* background colors */
+  --background-light-gray: #f5f4fa;
+  --button-hover: #188ce8;
+  --background-grey: #2f303a;
+}

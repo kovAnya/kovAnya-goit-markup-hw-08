@@ -1,0 +1,10 @@
+.header {
+  border-bottom: 1px solid var(--bottom-line);
+}
+.header__container {
+  display: flex;
+  align-items: center;
+}
+.header__list {
+  display: flex;
+}
