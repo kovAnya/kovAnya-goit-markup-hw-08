@@ -4,3 +4,40 @@
   line-height: $lh;
   letter-spacing: $ls;
 }
+
+@mixin media($type) {
+  @if $type == 'mobile' {
+    @media screen and (min-width: 480px) {
+      @content;
+    }
+  }
+
+  @if $type == 'mobile-only' {
+    @media screen and (max-width: #{768px - 0.02}) {
+      @content;
+    }
+  }
+
+  @if $type == 'tablet' {
+    @media screen and (min-width: 768px) {
+      @content;
+    }
+  }
+  @if $type == 'tablet-only' {
+    @media screen and (min-width: 768px) and (max-width: #{1200px - 0.02}) {
+      @content;
+    }
+  }
+
+  @if $type == 'desktop' {
+    @media screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+
+  @if $type == 'not-desktop' {
+    @media screen and (max-width: #{1200px - 0.02}) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.footer-form {
+  display: flex;
+  align-items: flex-end;
+}
+.footer-form__field {
+  margin-right: 12px;
+}
+.footer-form__title {
+  @include fonts(700, 14px, 1.14, 0.03em);
+  display: block;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: var(--white-accent);
+}
+.footer-form__input {
+  padding: 15px 0 15px 16px;
+  width: 360px;
+  border-color: rgba(255, 255, 255, 0.3);
+
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+.footer-form__btn {
+  position: relative;
+  padding: 10px 62px 10px 29px;
+}
+.footer-form__icon {
+  position: absolute;
+  top: 50%;
+  right: 28px;
+  transform: translateY(-50%);
+}

@@ -1,19 +1,10 @@
 .clients__list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 .clients__item {
-  flex-basis: calc(100% / 2 - 15px);
-  // width: 170px;
+  width: 170px;
   height: 92px;
-  margin-bottom: 30px;
-  &:nth-last-child(-n + 2) {
-    margin-bottom: 0;
-  }
-  @include media(tablet) {
-    flex-basis: calc(100% / 3 - 15px);
-  }
+
   // &:not(:last-child) {
   //   margin-right: 30px;
   // }

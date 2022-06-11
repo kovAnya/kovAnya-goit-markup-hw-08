@@ -1,0 +1,26 @@
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+}
+.header-contacts__item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-contacts__link {
+  @include fonts(500, null, 1.14, 0.02em);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color var(--timing-function);
+  color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.header-contacts__icon {
+  margin-right: 10px;
+}

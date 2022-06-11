@@ -1,18 +1,13 @@
 .work {
   padding-top: 0;
-  display: none;
-
-  @include media(desktop) {
-    display: block;
-  }
 }
 .work__item {
   position: relative;
   flex-basis: calc((100% - 60px) / 3);
 
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+  // &:not(:last-child) {
+  //   margin-right: 30px;
+  // }
 }
 .work__description {
   position: absolute;

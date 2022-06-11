@@ -1,0 +1,26 @@
+.modal-form__title {
+  display: block;
+  margin-bottom: 12px;
+  @include fonts(700, 20px, 1.15, 0.03em);
+}
+.modal-form__group {
+  display: block;
+  text-align: left;
+}
+.modal-form__label {
+  display: inline-block;
+  margin-bottom: 4px;
+  @include fonts(null, 12px, 1.17, 0.01em);
+  color: var(--secondary-color);
+}
+.modal-form__wrap {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+}
+.modal-form__input {
+  padding-left: 42px;
+}
+.modal-form__btn {
+  padding: 10px 56px;
+}
