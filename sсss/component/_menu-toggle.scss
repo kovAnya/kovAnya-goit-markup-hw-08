@@ -1,0 +1,18 @@
+.menu-toggle {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  @include media(tablet) {
+    display: none;
+  }
+}

@@ -1,19 +1,30 @@
 .header-contacts {
-  display: flex;
   margin-left: auto;
+  @include media(mobile-only) {
+    display: none;
+  }
+  @include media(desktop) {
+    display: flex;
+  }
 }
 .header-contacts__item:not(:last-child) {
-  margin-right: 50px;
+  @include media(desktop) {
+    margin-right: 50px;
+  }
 }
 .header-contacts__link {
   @include fonts(500, null, 1.14, 0.02em);
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   transition: color var(--timing-function);
   color: var(--secondary-color);
   display: flex;
   align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  @include media(desktop) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 
   &:hover,
   &:focus {

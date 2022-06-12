@@ -5,6 +5,14 @@
   display: flex;
   align-items: center;
 }
+.header__logo {
+  @include media(mobile-only) {
+    padding: 16px 0;
+  }
+  @include media(tablet) {
+    margin-right: 88px;
+  }
+}
 .header__list {
   display: flex;
 }

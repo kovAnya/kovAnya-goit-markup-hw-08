@@ -148,13 +148,26 @@ img {
   align-items: center;
 }
 
+@media screen and (max-width: 767.98px) {
+  .header__logo {
+    padding: 16px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 88px;
+  }
+}
+
 .header__list {
   display: flex;
 }
 
-.nav {
-  display: flex;
-  align-items: center;
+@media screen and (max-width: 767.98px) {
+  .nav {
+    display: none;
+  }
 }
 
 .nav__item:not(:last-child) {
@@ -219,12 +232,25 @@ img {
 }
 
 .header-contacts {
-  display: flex;
   margin-left: auto;
 }
 
-.header-contacts__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (max-width: 767.98px) {
+  .header-contacts {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contacts {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contacts__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .header-contacts__link {
@@ -232,12 +258,19 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   transition: color var(--timing-function);
   color: var(--secondary-color);
   display: flex;
   align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contacts__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .header-contacts__link:hover, .header-contacts__link:focus {
@@ -265,6 +298,40 @@ img {
 
 .btn:hover, .btn:focus {
   background-color: var(--button-hover);
+}
+
+.menu-toggle {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-toggle:hover, .menu-toggle:focus {
+  color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.mobile-menu__btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
 }
 
 .hero {
