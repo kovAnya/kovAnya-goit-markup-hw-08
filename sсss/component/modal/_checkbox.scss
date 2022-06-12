@@ -32,9 +32,14 @@
 
 .checkbox-group__label {
   display: inline-block;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  @include media(desktop) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .checkbox-group__agreement {
   color: var(--accent-color);

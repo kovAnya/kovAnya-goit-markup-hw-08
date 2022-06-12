@@ -1,7 +1,10 @@
 .modal-form__title {
   display: block;
   margin-bottom: 12px;
-  @include fonts(700, 20px, 1.15, 0.03em);
+  @include fonts(700, 20px, 1.5, 0.03em);
+  @include media(desktop) {
+    line-height: 1.15;
+  }
 }
 .modal-form__group {
   display: block;

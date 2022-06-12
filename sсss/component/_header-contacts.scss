@@ -14,7 +14,6 @@
 }
 .header-contacts__link {
   @include fonts(500, null, 1.14, 0.02em);
-  display: block;
   transition: color var(--timing-function);
   color: var(--secondary-color);
   display: flex;
