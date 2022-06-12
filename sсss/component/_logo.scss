@@ -1,9 +1,12 @@
 .logo {
   font-family: Raleway, sans-serif;
-  @include fonts(700, 26px, 1.2, 0.03em);
+  @include fonts(700, 24px, 1.17, 0.03em);
   color: var(--accent-color);
-  margin-right: 93px;
   display: inline-block;
+  @include media(desktop) {
+    @include fonts(null, 26px, 1.2, null);
+    margin-right: 93px;
+  }
 }
 .logo__span--black {
   color: var(--black-accent);

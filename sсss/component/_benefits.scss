@@ -1,8 +1,14 @@
-@include media(tablet) {
-  .benefits__list {
+.benefits__list {
+  @include media(tablet) {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  @include media(desktop) {
+    flex-wrap: nowrap;
   }
 }
+
 .benefits__item {
   //width: 270px;
   // margin-right: 30px;
@@ -10,6 +16,18 @@
   // &:last-child {
   //   margin-right: 0;
   // }
+  @include media(not-desktop) {
+    flex-basis: calc((100% - 30px) / 2);
+    margin-bottom: 30px;
+  }
+  &:nth-last-child(-n + 2) {
+    @include media(tablet) {
+      margin-bottom: 0;
+    }
+  }
+  @include media(desktop) {
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
 .benefits__svg-wrapper {
   background-color: var(--background-light-gray);
@@ -34,8 +52,4 @@
 .benefits__text {
   @include fonts(null, null, 1.71, 0.03em);
   color: var(--secondary-color);
-
-  @include media(not-desktop) {
-    margin-bottom: 30px;
-  }
 }

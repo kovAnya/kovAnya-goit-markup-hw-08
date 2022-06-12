@@ -1,9 +1,13 @@
 .footer-form {
-  display: flex;
-  align-items: flex-end;
+  @include media(desktop) {
+    display: flex;
+    align-items: flex-end;
+  }
 }
 .footer-form__field {
-  margin-right: 12px;
+  @include media(desktop) {
+    margin-right: 12px;
+  }
 }
 .footer-form__title {
   @include fonts(700, 14px, 1.14, 0.03em);
@@ -14,8 +18,17 @@
 }
 .footer-form__input {
   padding: 15px 0 15px 16px;
-  width: 360px;
   border-color: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  @include media(tablet) {
+    width: 450px;
+  }
+  @include media(not-desktop) {
+    margin-bottom: 20px;
+  }
+  @include media(desktop) {
+    width: 360px;
+  }
 
   &:focus {
     border-color: var(--accent-color);
