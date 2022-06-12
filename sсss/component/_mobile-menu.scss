@@ -1,9 +1,21 @@
 .mobile-menu {
-  display: none;
   position: fixed;
+  left: 0;
+  bottom: 0;
   width: 100vw;
   height: 100vh;
   background-color: #fff;
+
+  transform: translateX(100%);
+  transition: transform var(--timing-function);
+
+  &.is-open {
+    transform: translateX(0%);
+  }
+}
+.mobile-menu__container {
+  position: relative;
+  padding: 48px 40px;
 }
 
 .mobile-menu__btn {
