@@ -13,7 +13,7 @@
   }
 }
 .header-contacts__link {
-  @include fonts(500, null, 1.14, 0.02em);
+  @include fonts(500, 12px, 1.17, 0.02em);
   transition: color var(--timing-function);
   color: var(--secondary-color);
   display: flex;
@@ -21,6 +21,7 @@
   padding-top: 5px;
   padding-bottom: 5px;
   @include media(desktop) {
+    @include fonts(500, 14px, 1.14, 0.02em);
     padding-top: 32px;
     padding-bottom: 32px;
   }
